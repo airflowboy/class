@@ -14,7 +14,7 @@ export default function GraphqlMutationPage() {
 
     const [createProduct] = useMutation(CREATE_PRODUCT)
 
-    const onClcikSubmit = async () => {
+    const onClickSubmit = async () => {
         const result = await createProduct({
             variables: {
                 seller: "훈이",
@@ -32,7 +32,7 @@ export default function GraphqlMutationPage() {
     return (
 
         <div>
-            <button onClick={onClcikSubmit}>GRAPHQL-API-요청하기</button>
+            <button onClick={onClickSubmit}>GRAPHQL-API-요청하기</button>
         </div>
     )
 }
